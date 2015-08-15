@@ -9,6 +9,8 @@ It's often appropriate to have [multiple browser profiles](https://developer.moz
 ## Usage
 If you clone/download this repository you can run the <code>indicate.py</code> script and it will walk you through specifying a profile, text and colour to use before copying the rules into your profile automatically.
 
+![Script Screenshot](http://i.imgur.com/eUWiY0S.png)
+
 Alternatively you can add the CSS rules manually by copying userChrome.css into the [<code>chrome</code> folder](http://kb.mozillazine.org/Chrome_folder) inside a Firefox profile. If the file already exists then just copy the rules from my file to the bottom of yours. Change the the <code>content: "";</code> property to add text to the far right of the tab bar and the <code>background: ;</code> property to specify a background colour to be used.
 
 Lighter colours seems to work best but you could tweak the text colour and other elements to make a darker colour blend in better. Also the 'padding-right: ;' property stops the tabs from overlapping the text when you open too many so if you want a long text string you may need to increase this value.
