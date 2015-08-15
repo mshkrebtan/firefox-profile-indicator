@@ -4,6 +4,8 @@ As a way of indicating which Firefox profile is currently in use I wrote some [u
 
 ![Screenshot](http://i.imgur.com/fvpAgRo.png)
 
+It's often appropriate to have [multiple browser profiles](https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles) set up for different uses. I use one for personal browsing and one for work so that I can maintain seperate bookmark bars and avoid signing in and out of services like Google, GitHub and Slack all the time. Using Firefox's [<code>-no-remote</code>](https://developer.mozilla.org/en-US/docs/Mozilla/Command_Line_Options#-no-remote) flag along with the profile switcher flag [<code>-P</code>](https://developer.mozilla.org/en-US/docs/Mozilla/Command_Line_Options#-ProfileManager_or_-P) you can have multiple instances of Firefox open at a time with different profiles running and now a way to quickly know which window you should be be browsing in.
+
 ## Usage
 If you clone/download this repository you can run the <code>indicate.py</code> script and it will walk you through specifying a profile, text and colour to use before copying the rules into your profile automatically.
 
@@ -13,3 +15,8 @@ Lighter colours seems to work best but you could tweak the text colour and other
 
 ## Known Issues
 Currently the script is hardcoded to look for Firefox profiles inside the <code>~/.mozilla/firefox</code> and so will probably only work for Linux systems. You can easily change this string to point to your profiles' location.
+
+## Useful Links
+[https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles](https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles)
+
+[http://giantdorks.org/alain/application-launcher-for-multiple-firefox-profiles-in-ubuntu-12-04/](http://giantdorks.org/alain/application-launcher-for-multiple-firefox-profiles-in-ubuntu-12-04/)
