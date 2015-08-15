@@ -1,0 +1,45 @@
+/* Start Firefox Profile Indicator */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Give some extra space above tab and DM chrome*/
+#TabsToolbar {
+    margin-top: 4px;
+}
+
+/* Bring everything in front of the colour bar */
+#tabbrowser-tabs > * {
+    z-index: 2;
+    position: relative;
+}
+
+/* Stop the profile name being overlapped when the tab fill the bar */
+.tabbrowser-arrowscrollbox {
+    padding-right: 80px;
+}
+
+/* The colour bar */
+#tabbrowser-tabs:after {
+    background: skyblue;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    color: rgba(0, 0, 0, 0.5);
+    content: "Text";
+    direction: rtl;
+    font-size: 12px;
+    font-weight: bold;
+    height: 34px;
+    left: 0;
+    line-height: 34px;
+    pointer-events: none;
+    position: absolute;
+    text-align: right;
+    text-indent: 10px;
+    width: 100%;
+}
+
+/* Hide white top border which overlapps the current tab */
+#nav-bar {
+    z-index: 1;
+}
+
+/* End Firefox Profile Indicator */
